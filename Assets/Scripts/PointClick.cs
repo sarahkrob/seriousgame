@@ -8,10 +8,13 @@ public class PointClick : MonoBehaviour
 
     bool interactable; //can this object currently be clicked
     public UnityEvent OnClick = new UnityEvent();
+    public Sprite swapSprite;
+    private SpriteRenderer spriteRenderer;
 
     void Start()
     {
         interactable = true;
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -22,20 +25,33 @@ public class PointClick : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (interactable)
+        if (interactable && (StateManager.Instance.inDialogue == false)) 
         {
+            //save current object we're interacting with
+            StateManager.Instance.Object = gameObject;
+            StateManager.Instance.inDialogue = true;
+            interactable = false;
             OnClick.Invoke();
         }
     }
 
     void OnMouseEnter()
     {
-        Debug.Log("HOVER");
-        transform.localScale += new Vector3(0.25f, 0.25f, 0);
+        if (interactable && (StateManager.Instance.inDialogue == false))
+            transform.localScale += new Vector3(0.25f, 0.25f, 0);
     }
 
     void OnMouseExit()
     {
-        transform.localScale -= new Vector3(0.25f, 0.25f, 0);
+        if (interactable && (StateManager.Instance.inDialogue == false))
+            transform.localScale -= new Vector3(0.25f, 0.25f, 0);
     }
+
+    public void dialogueComplete()
+    {
+        StateManager.Instance.Object = null;
+        StateManager.Instance.inDialogue = false;
+        spriteRenderer.sprite = swapSprite;
+    }
+
 }

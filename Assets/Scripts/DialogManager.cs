@@ -15,6 +15,7 @@ public class DialogManager : MonoBehaviour
     {
         sentences = new Queue<string>();
         canvas.enabled = false;
+        StateManager.Instance.inDialogue = false;
     }
 
     public void startD(Dialog d)
@@ -44,6 +45,8 @@ public class DialogManager : MonoBehaviour
 
     void EndDialog()
     {
+        UnityEngine.Debug.Log(StateManager.Instance.Object.name);
+        StateManager.Instance.Object.GetComponent<PointClick>().dialogueComplete();
         canvas.enabled = false;
     }
 }
