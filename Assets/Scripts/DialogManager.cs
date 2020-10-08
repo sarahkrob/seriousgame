@@ -13,8 +13,11 @@ public class DialogManager : MonoBehaviour
     private Dialog currentDialog;
     private GameObject dialogBox;
     public GameObject button1;
+    private bool button1enabled;
     public GameObject button2;
+    private bool button2enabled;
     public GameObject button3;
+    private bool button3enabled;
 
     // Start is called before the first frame update
     void Start()
@@ -24,8 +27,6 @@ public class DialogManager : MonoBehaviour
         canvas.enabled = false;
         StateManager.Instance.inDialogue = false;
         dialogBox = GameObject.Find("Dialog Box");
-
-
     }
 
     public void startD(Dialog d)
@@ -34,9 +35,27 @@ public class DialogManager : MonoBehaviour
         if(d.choice)
         {
             eventPresent = true;
-            button1.GetComponentInChildren<Text>().text = d.choice.choice1;
-            button2.GetComponentInChildren<Text>().text = d.choice.choice2;
-            button3.GetComponentInChildren<Text>().text = d.choice.choice3;
+            if (d.choice.choice1 != "")
+            {
+                button1.GetComponentInChildren<Text>().text = d.choice.choice1;
+                button1enabled = true;
+            }
+            else
+                button1enabled = false;
+            if (d.choice.choice2 != "")
+            {
+                button2.GetComponentInChildren<Text>().text = d.choice.choice2;
+                button2enabled = true;
+            }
+            else
+                button2enabled = false;
+            if (d.choice.choice3 != "")
+            {
+                button3.GetComponentInChildren<Text>().text = d.choice.choice3;
+                button3enabled = true;
+            }
+            else
+                button3enabled = false;
         }
         else
         {
@@ -69,12 +88,21 @@ public class DialogManager : MonoBehaviour
         if (sentences.Count == 0 && eventPresent) 
         {
             dialogBox.SetActive(false);
-            button1.SetActive(true);
-            button2.SetActive(true);
-            button3.SetActive(true);
-            button1.GetComponent<Button>().onClick.AddListener(delegate { startD(currentDialog.choice.response1); });
-            button2.GetComponent<Button>().onClick.AddListener(delegate { startD(currentDialog.choice.response2); });
-            button3.GetComponent<Button>().onClick.AddListener(delegate { startD(currentDialog.choice.response3); });
+            if (button1enabled)
+            {
+                button1.SetActive(true);
+                button1.GetComponent<Button>().onClick.AddListener(delegate { startD(currentDialog.choice.response1); });
+            }
+            if (button2enabled)
+            {
+                button2.SetActive(true);
+                button2.GetComponent<Button>().onClick.AddListener(delegate { startD(currentDialog.choice.response2); });
+            }
+            if (button3enabled)
+            {
+                button3.SetActive(true);
+                button3.GetComponent<Button>().onClick.AddListener(delegate { startD(currentDialog.choice.response3); });
+            }  
         }
         else if (sentences.Count == 0 )
         {
