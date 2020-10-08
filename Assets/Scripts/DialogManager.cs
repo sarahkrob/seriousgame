@@ -31,14 +31,15 @@ public class DialogManager : MonoBehaviour
 
     public void startD(Dialog d)
     {
-        currentDialog = d;
-        if(d.choice)
+        UnityEngine.Debug.Log(eventPresent);
+        if (d.choice!=null)
         {
             eventPresent = true;
             if (d.choice.choice1 != "")
             {
                 button1.GetComponentInChildren<Text>().text = d.choice.choice1;
                 button1enabled = true;
+                button1.GetComponent<Button>().onClick.RemoveAllListeners();
             }
             else
                 button1enabled = false;
@@ -46,6 +47,7 @@ public class DialogManager : MonoBehaviour
             {
                 button2.GetComponentInChildren<Text>().text = d.choice.choice2;
                 button2enabled = true;
+                button2.GetComponent<Button>().onClick.RemoveAllListeners();
             }
             else
                 button2enabled = false;
@@ -53,6 +55,7 @@ public class DialogManager : MonoBehaviour
             {
                 button3.GetComponentInChildren<Text>().text = d.choice.choice3;
                 button3enabled = true;
+                button3.GetComponent<Button>().onClick.RemoveAllListeners();
             }
             else
                 button3enabled = false;
@@ -60,21 +63,28 @@ public class DialogManager : MonoBehaviour
         else
         {
             eventPresent = false;
+            button1enabled = false;
+            button2enabled = false;
+            button3enabled = false;
         }
+
         if (canvas.enabled == false)
         {
             canvas.enabled = true;
         }
+
         if (!dialogBox.activeInHierarchy)
         {
             dialogBox.SetActive(true);
         }
+
         if (button1.activeInHierarchy || button2.activeInHierarchy || button3.activeInHierarchy)
         {
             button1.SetActive(false);
             button2.SetActive(false);
             button3.SetActive(false);
         }
+        currentDialog = d;
         sentences.Clear();
         foreach(string sent in d.sentences)
         {
@@ -85,6 +95,8 @@ public class DialogManager : MonoBehaviour
 
     public void DisplayNextSent()
     {
+        UnityEngine.Debug.Log(eventPresent);
+
         if (sentences.Count == 0 && eventPresent) 
         {
             dialogBox.SetActive(false);
