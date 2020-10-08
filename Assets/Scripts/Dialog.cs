@@ -6,8 +6,10 @@ using UnityEngine;
 public class Dialog : MonoBehaviour
 {
 
-    public string speaker;
+    public ButtonEvent choice;
 
     [TextArea(3, 10)]
     public string[] sentences;
+
+
 }
