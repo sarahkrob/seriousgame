@@ -37,21 +37,28 @@ public class PointClick : MonoBehaviour
 
     void OnMouseEnter()
     {
-        if (interactable && (StateManager.Instance.inDialogue == false))
+        if (interactable && (StateManager.Instance.inDialogue == false) && (gameObject.tag != "Background"))
             transform.localScale += new Vector3(0.25f, 0.25f, 0);
     }
 
     void OnMouseExit()
     {
-        if (interactable && (StateManager.Instance.inDialogue == false))
+        if (interactable && (StateManager.Instance.inDialogue == false) && (gameObject.tag != "Background"))
             transform.localScale -= new Vector3(0.25f, 0.25f, 0);
     }
 
-    public void dialogueComplete()
+    public void dialogueCorrect()
     {
         StateManager.Instance.Object = null;
         StateManager.Instance.inDialogue = false;
         spriteRenderer.sprite = swapSprite;
+    }
+
+    public void dialogueIncorrect()
+    {
+        StateManager.Instance.Object = null;
+        StateManager.Instance.inDialogue = false;
+        interactable = true;
     }
 
 }

@@ -131,8 +131,7 @@ public class DialogManager : MonoBehaviour
 
     void EndDialog()
     {
-        UnityEngine.Debug.Log(StateManager.Instance.Object.name);
-        StateManager.Instance.Object.GetComponent<PointClick>().dialogueComplete();
+        StateManager.Instance.Object.GetComponent<PointClick>().dialogueCorrect();
         canvas.enabled = false;
     }
 }
