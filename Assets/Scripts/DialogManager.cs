@@ -131,7 +131,14 @@ public class DialogManager : MonoBehaviour
 
     void EndDialog()
     {
-        StateManager.Instance.Object.GetComponent<PointClick>().dialogueCorrect();
+        if (currentDialog.rightPath)
+        {
+            StateManager.Instance.Object.GetComponent<PointClick>().dialogueCorrect();
+        }
+        else
+        {
+            StateManager.Instance.Object.GetComponent<PointClick>().dialogueIncorrect();
+        }
         canvas.enabled = false;
     }
 }
