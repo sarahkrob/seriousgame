@@ -22,8 +22,10 @@ public class PointClick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!complete)
-            interactable = !StateManager.Instance.inMinigame;
+        if (!complete && !StateManager.Instance.inMinigame)
+            interactable = true;
+        else if (complete || StateManager.Instance.inMinigame)
+            interactable = false;
     }
 
     void OnMouseDown()
