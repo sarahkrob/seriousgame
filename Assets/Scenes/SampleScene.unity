@@ -193,7 +193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   choice1: Maybe I should just figure it out on my own.
   response1: {fileID: 546623728}
-  choice2: Mr. Parkins, can you help me with this week's assignment?
+  choice2: Mr. Kressler, can you help me with this week's assignment?
   response2: {fileID: 767550915}
   choice3: "Let's ask Tanya instead. \u201CHey Tanya, can you help me with our assignment?\""
   response3: {fileID: 1293909475}
@@ -369,18 +369,24 @@ PrefabInstance:
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
       propertyPath: sentences.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
       propertyPath: sentences.Array.data[0]
-      value: I don't know about this, he looks extra upset today.
+      value: "Mr. Bob Kessler: Oh Frak. We\u2019re running out of time, I have an
+        appointment in an hour!"
       objectReference: {fileID: 0}
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
       propertyPath: choice
       value: 
       objectReference: {fileID: 58103670}
+    - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: sentences.Array.data[1]
+      value: I don't know about this, he looks extra upset and busy today.
+      objectReference: {fileID: 0}
     - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -443,6 +449,109 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4046d0a37928dd44b2b65078c166108, type: 3}
+--- !u!1001 &98395314
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 967685077}
+    m_Modifications:
+    - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: sentences.Array.data[0]
+      value: "(Eventually you will need to have courage and get out of bed. Try again
+        after a brief pause)\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: choice
+      value: 
+      objectReference: {fileID: 967685081}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760153, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_Name
+      value: Button1.2 Response
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f4046d0a37928dd44b2b65078c166108, type: 3}
+--- !u!4 &98395315 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+    type: 3}
+  m_PrefabInstance: {fileID: 98395314}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &98395316 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+    type: 3}
+  m_PrefabInstance: {fileID: 98395314}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6db4d4eca0b74a54b82e7d8e5c30dfd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &151345823
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,10 +562,11 @@ GameObject:
   m_Component:
   - component: {fileID: 151345826}
   - component: {fileID: 151345825}
-  - component: {fileID: 151345824}
-  - component: {fileID: 151345829}
-  - component: {fileID: 151345828}
   - component: {fileID: 151345827}
+  - component: {fileID: 151345824}
+  - component: {fileID: 151345828}
+  - component: {fileID: 151345829}
+  - component: {fileID: 151345830}
   m_Layer: 0
   m_Name: Shelf
   m_TagString: Untagged
@@ -609,9 +719,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   choice: {fileID: 0}
-  rightPath: 0
+  rightPath: 1
   sentences:
-  - Take care of your-shelf.
+  - "I really screwed up at the party last week. I just didn\u2019t know anyone there.
+    What would Billsby have done in my shoes?"
+  - "(You were invited to a party by a friend but you don\u2019t know where they
+    are and you don\u2019t know anyone else here.)"
+--- !u!114 &151345830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151345823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8015f325dde9769499b8ff6fb8a2bedd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  choice1: 
+  response1: {fileID: 0}
+  choice2: 
+  response2: {fileID: 0}
+  choice3: 
+  response3: {fileID: 0}
 --- !u!1 &158279587
 GameObject:
   m_ObjectHideFlags: 0
@@ -1923,12 +2054,12 @@ PrefabInstance:
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
       propertyPath: sentences.Array.size
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
       propertyPath: sentences.Array.data[0]
-      value: "Mr Parkins: No worries, Dante. Let me know if there\u2019s anything
+      value: "Mr Kessler: No worries, Dante. Let me know if there\u2019s anything
         I can do. What questions do you have on the homework?"
       objectReference: {fileID: 0}
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
@@ -1940,13 +2071,29 @@ PrefabInstance:
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
       propertyPath: sentences.Array.data[2]
-      value: (By speaking to Mr. Parkins directly, you were able to get the information
-        you needed to help you turn in your assignment. Good job, you got an A!)
+      value: (By speaking to Bob directly, you were able to get the information you
+        needed to help you turn in your assignment. Good job, you got an A!)
       objectReference: {fileID: 0}
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
       propertyPath: rightPath
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: sentences.Array.data[3]
+      value: "Mr. Bob Kessler: \u201C....\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: sentences.Array.data[4]
+      value: "Ryan: \u201CBob, you\u2019re muted.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: sentences.Array.data[5]
+      value: "Mr. Bob Kessler: \u201CGosh Darnit! I was saying really good job, Dante!
+        You got an A.\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
@@ -2010,6 +2157,122 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4046d0a37928dd44b2b65078c166108, type: 3}
+--- !u!1001 &926128102
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1322341917}
+    m_Modifications:
+    - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: sentences.Array.data[0]
+      value: "I\u2019ll try to be productive today, but my brain is right. Maybe
+        I should just stay in my room. What can I do in my room though?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: sentences.Array.data[1]
+      value: 'Suffering from depression can make it really difficult to get out of
+        bed and go outside. Good job making it through the first hurdle that most
+        people with depression and anxiety face each day. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: sentences.Array.data[2]
+      value: Maybe I can think about how to tackle upcoming events or reflect on
+        past events.
+      objectReference: {fileID: 0}
+    - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: sentences.Array.data[3]
+      value: Help Dante overcome his fears so that he can leave his room without
+        anxiety.
+      objectReference: {fileID: 0}
+    - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: rightPath
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760153, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_Name
+      value: Button3.1 Response
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f4046d0a37928dd44b2b65078c166108, type: 3}
+--- !u!114 &926128103 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+    type: 3}
+  m_PrefabInstance: {fileID: 926128102}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6db4d4eca0b74a54b82e7d8e5c30dfd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &946311243 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
@@ -2036,6 +2299,7 @@ GameObject:
   - component: {fileID: 967685080}
   - component: {fileID: 967685079}
   - component: {fileID: 967685078}
+  - component: {fileID: 967685081}
   m_Layer: 0
   m_Name: Bed
   m_TagString: Untagged
@@ -2132,7 +2396,9 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.55, y: 1.48, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1304875388}
+  - {fileID: 98395315}
   m_Father: {fileID: 804458078}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2148,10 +2414,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6db4d4eca0b74a54b82e7d8e5c30dfd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choice: {fileID: 0}
+  choice: {fileID: 967685081}
   rightPath: 0
   sentences:
-  - Bed-der take a nap!
+  - (Do you want to get out of bed?)
 --- !u!114 &967685079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2191,6 +2457,206 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.446339, y: 2.4691572}
   m_EdgeRadius: 0
+--- !u!114 &967685081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967685074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8015f325dde9769499b8ff6fb8a2bedd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  choice1: "Yeah, it\u2019s time to start the day."
+  response1: {fileID: 1304875389}
+  choice2: "No, I don\u2019t want to deal with today yet."
+  response2: {fileID: 98395316}
+  choice3: 
+  response3: {fileID: 0}
+--- !u!1001 &974314102
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1322341917}
+    m_Modifications:
+    - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: sentences.Array.data[0]
+      value: (Eventually you will need to have courage and get out of bed.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760153, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_Name
+      value: Button3.2 Response
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f4046d0a37928dd44b2b65078c166108, type: 3}
+--- !u!114 &974314103 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+    type: 3}
+  m_PrefabInstance: {fileID: 974314102}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6db4d4eca0b74a54b82e7d8e5c30dfd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &1071449051
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1304875388}
+    m_Modifications:
+    - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: sentences.Array.data[0]
+      value: (Eventually you will need to have courage and get out of bed. )
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760153, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_Name
+      value: Button2.2 Response
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f4046d0a37928dd44b2b65078c166108, type: 3}
+--- !u!114 &1071449052 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+    type: 3}
+  m_PrefabInstance: {fileID: 1071449051}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6db4d4eca0b74a54b82e7d8e5c30dfd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1113455826
 GameObject:
   m_ObjectHideFlags: 0
@@ -2468,6 +2934,260 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6db4d4eca0b74a54b82e7d8e5c30dfd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1304875387
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 967685077}
+    m_Modifications:
+    - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: sentences.Array.data[0]
+      value: (Are you sure? It might be a tough day.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: choice
+      value: 
+      objectReference: {fileID: 1304875391}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760153, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_Name
+      value: Button1.1 Response
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f4046d0a37928dd44b2b65078c166108, type: 3}
+--- !u!4 &1304875388 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+    type: 3}
+  m_PrefabInstance: {fileID: 1304875387}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1304875389 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+    type: 3}
+  m_PrefabInstance: {fileID: 1304875387}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304875390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6db4d4eca0b74a54b82e7d8e5c30dfd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1304875390 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1947247961319760153, guid: f4046d0a37928dd44b2b65078c166108,
+    type: 3}
+  m_PrefabInstance: {fileID: 1304875387}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1304875391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304875390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8015f325dde9769499b8ff6fb8a2bedd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  choice1: Yes, I can handle it.
+  response1: {fileID: 1322341915}
+  choice2: "On second thought, let\u2019s just stay in bed for another hour."
+  response2: {fileID: 1071449052}
+  choice3: 
+  response3: {fileID: 0}
+--- !u!1001 &1322341914
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1304875388}
+    m_Modifications:
+    - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: sentences.Array.data[0]
+      value: "(I don\u2019t know. The world\u2019s in a bad place. Maybe it is better
+        to just stay in bed.)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: choice
+      value: 
+      objectReference: {fileID: 1322341918}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947247961319760153, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: m_Name
+      value: Button2.1 Response
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f4046d0a37928dd44b2b65078c166108, type: 3}
+--- !u!114 &1322341915 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+    type: 3}
+  m_PrefabInstance: {fileID: 1322341914}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322341916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6db4d4eca0b74a54b82e7d8e5c30dfd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1322341916 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1947247961319760153, guid: f4046d0a37928dd44b2b65078c166108,
+    type: 3}
+  m_PrefabInstance: {fileID: 1322341914}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1322341917 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
+    type: 3}
+  m_PrefabInstance: {fileID: 1322341914}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1322341918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322341916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8015f325dde9769499b8ff6fb8a2bedd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  choice1: No. I need to be productive today.
+  response1: {fileID: 926128103}
+  choice2: "Yeah, you\u2019re right. If I lay here I can\u2019t screw anything up,
+    right."
+  response2: {fileID: 974314103}
+  choice3: 
+  response3: {fileID: 0}
 --- !u!1 &1324172069
 GameObject:
   m_ObjectHideFlags: 0
@@ -2922,7 +3642,7 @@ PrefabInstance:
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
       propertyPath: sentences.Array.data[0]
-      value: 'Mr Parkins: Hey, Dante. You were late to class again today, what''s
+      value: 'Mr Kessler: Hey, Dante. You were late to class again today, what''s
         going on?'
       objectReference: {fileID: 0}
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
@@ -3066,7 +3786,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   choice1: Let's not think about this right now.
   response1: {fileID: 1890216944}
-  choice2: (Approach Mr. Parkins)
+  choice2: (Approach Mr. Kessler)
   response2: {fileID: 1235904421}
   choice3: 
   response3: {fileID: 0}
@@ -3086,13 +3806,14 @@ MonoBehaviour:
   rightPath: 0
   sentences:
   - (Player interacts with alarm clock)
-  - (Open bubble to memory of approaching teacher at school)
-  - 'I''m always late to class and I can tell Mr. Parkins is upset at me for it.
+  - "Mr. Bob Kessler: I don\u2019t know what's happening here! It\u2019s too complicated!
+    Try to clean it up."
+  - 'I''m always late to class and I can tell Mr. Kessler is upset at me for it.
     But I really need help on my homework assignment. '
   - "I don't think my history grade can take another zero for not turning in my assignment.
     But I probably would have gotten a zero anyways because I didn\u2019t know what
     to write about."
-  - How can I talk to Mr. Parkins on Monday without getting yelled at? I need help
+  - How can I talk to Mr. Kessler on Monday without getting yelled at? I need help
     with my homework!
 --- !u!114 &1591147769
 MonoBehaviour:
@@ -3767,13 +4488,13 @@ PrefabInstance:
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
       propertyPath: sentences.Array.data[0]
-      value: 'Mr Parkins: Ok, well, I can''t have you showing up late anymore or
+      value: 'Mr Kessler: Ok, well, I can''t have you showing up late anymore or
         else I''m going to have to give you detention.'
       objectReference: {fileID: 0}
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
       propertyPath: sentences.Array.data[1]
-      value: 'Dante: Oh no, I''m going to get detention. Mr. Parkins is mad at me,
+      value: 'Dante: Oh no, I''m going to get detention. Mr. Kessler is mad at me,
         he won''t help me with my homework. I''ll just figure it out.'
       objectReference: {fileID: 0}
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
