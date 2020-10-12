@@ -7,6 +7,7 @@ public class PointClick : MonoBehaviour
 {
 
     bool interactable; //can this object currently be clicked
+    bool complete;
     public UnityEvent OnClick = new UnityEvent();
     public Sprite swapSprite;
     private SpriteRenderer spriteRenderer;
@@ -14,13 +15,15 @@ public class PointClick : MonoBehaviour
     void Start()
     {
         interactable = true;
+        complete = false;
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (!complete)
+            interactable = !StateManager.Instance.inMinigame;
     }
 
     void OnMouseDown()
@@ -49,6 +52,7 @@ public class PointClick : MonoBehaviour
 
     public void dialogueCorrect()
     {
+        complete = true;
         StateManager.Instance.Object = null;
         StateManager.Instance.inDialogue = false;
         spriteRenderer.sprite = swapSprite;

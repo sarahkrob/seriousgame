@@ -18,6 +18,8 @@ public class DialogManager : MonoBehaviour
     private bool button2enabled;
     public GameObject button3;
     private bool button3enabled;
+    public GameObject Minigame;
+    public GameObject Interactables;
 
     // Start is called before the first frame update
     void Start()
@@ -137,7 +139,10 @@ public class DialogManager : MonoBehaviour
         }
         else
         {
+            Instantiate(Minigame);
+            StateManager.Instance.inMinigame = true;
             StateManager.Instance.Object.GetComponent<PointClick>().dialogueIncorrect();
+            Interactables.SetActive(false);
         }
         canvas.enabled = false;
     }

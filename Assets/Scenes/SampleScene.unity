@@ -157,6 +157,8 @@ MonoBehaviour:
   button1: {fileID: 619065359}
   button2: {fileID: 467252696}
   button3: {fileID: 856765276}
+  Minigame: {fileID: 246176084740196569, guid: 7b497704823d4414fa527d18a3d1c49c, type: 3}
+  Interactables: {fileID: 804458077}
 --- !u!4 &14114206
 Transform:
   m_ObjectHideFlags: 0
@@ -169,7 +171,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &58103669 stripped
 GameObject:
@@ -193,8 +195,7 @@ MonoBehaviour:
   response1: {fileID: 546623728}
   choice2: Mr. Parkins, can you help me with this week's assignment?
   response2: {fileID: 767550915}
-  choice3: "Let\u2019s ask Tanya instead. \u201CHey Tanya, can you help me with our
-    assignment?\""
+  choice3: "Let's ask Tanya instead. \u201CHey Tanya, can you help me with our assignment?\""
   response3: {fileID: 1293909475}
 --- !u!1 &80081816
 GameObject:
@@ -373,7 +374,7 @@ PrefabInstance:
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
       propertyPath: sentences.Array.data[0]
-      value: "I don\u2019t know about this, he looks extra upset today."
+      value: I don't know about this, he looks extra upset today.
       objectReference: {fileID: 0}
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
@@ -549,12 +550,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 151345823}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -12.72, y: 4.27, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 804458078}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &151345827
 BoxCollider2D:
@@ -675,7 +676,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &176839351
 GameObject:
@@ -1122,9 +1123,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: fdbadd0af9312204a9e6fdbca991772c, type: 3}
     m_FontSize: 40
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 50
@@ -1219,12 +1220,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 804458078}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &546623728 stripped
 MonoBehaviour:
@@ -1509,13 +1510,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8015f325dde9769499b8ff6fb8a2bedd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choice1: "I\u2019m just useless and can\u2019t do anything right."
+  choice1: I'm just useless and can't do anything right.
   response1: {fileID: 793711673}
-  choice2: "My dog ran away and then I had to go find him. And then I left my lunch
-    at home so I had to go back and grab it, and then\u2026"
+  choice2: My dog ran away and then I had to go find him. And then I left my lunch
+    at home so I had to go back and grab it, and then...
   response2: {fileID: 1848179988}
-  choice3: "Sometimes it\u2019s difficult to get out of bed and be ready in the morning.
-    Can you help me with my assignment so I can turn it in?"
+  choice3: Sometimes it's difficult to get out of bed and be ready in the morning.
+    Can you help me with my assignment so I can turn it in?
   response3: {fileID: 946311243}
 --- !u!114 &767550915 stripped
 MonoBehaviour:
@@ -1544,9 +1545,9 @@ PrefabInstance:
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
       propertyPath: sentences.Array.data[0]
-      value: "(Talking negatively about yourself doesn\u2019t help you move forward
-        and avoids the true problem. What might be the real reason you struggle to
-        make it to class on time? Try again.)"
+      value: (Talking negatively about yourself doesn't help you move forward and
+        avoids the true problem. What might be the real reason you struggle to make
+        it to class on time? Try again.)
       objectReference: {fileID: 0}
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
@@ -1642,15 +1643,15 @@ PrefabInstance:
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
       propertyPath: sentences.Array.data[0]
-      value: "Great now I still don\u2019t know what to write about or how for this
-        assignment. I\u2019m just not going to turn it in again. "
+      value: 'Great, now I still don''t know what to write about or how for this
+        assignment. I''m just not going to turn it in again. '
       objectReference: {fileID: 0}
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
       propertyPath: sentences.Array.data[1]
-      value: "(If you run away from your problems, you won\u2019t be able to fix
-        them. It can be scary, but try to approach your fears so that you can resolve
-        your problems.)"
+      value: (If you run away from your problems, you won't be able to fix them.
+        It can be scary, but try to approach your fears so that you can resolve your
+        problems.)
       objectReference: {fileID: 0}
     - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
@@ -1714,6 +1715,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4046d0a37928dd44b2b65078c166108, type: 3}
+--- !u!1 &804458077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 804458078}
+  m_Layer: 0
+  m_Name: SceneMaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &804458078
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804458077}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 519420032}
+  - {fileID: 2034970675}
+  - {fileID: 1591147773}
+  - {fileID: 967685077}
+  - {fileID: 151345826}
+  - {fileID: 1324172071}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &856765276
 GameObject:
   m_ObjectHideFlags: 0
@@ -1906,6 +1943,11 @@ PrefabInstance:
       value: (By speaking to Mr. Parkins directly, you were able to get the information
         you needed to help you turn in your assignment. Good job, you got an A!)
       objectReference: {fileID: 0}
+    - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
+        type: 3}
+      propertyPath: rightPath
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2087,12 +2129,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 967685074}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.55, y: 1.48, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 804458078}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &967685078
 MonoBehaviour:
@@ -2207,9 +2249,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: fdbadd0af9312204a9e6fdbca991772c, type: 3}
     m_FontSize: 40
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 50
@@ -2501,12 +2543,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1324172069}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.69, y: -5.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 804458078}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1337040983
 GameObject:
@@ -2544,7 +2586,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8.7, y: -1.3}
+  m_AnchoredPosition: {x: -8.7, y: -32}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1337040985
@@ -2679,7 +2721,7 @@ RectTransform:
   - {fileID: 1337040984}
   - {fileID: 1487234184}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2716,7 +2758,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
+  Interactables: {fileID: 804458077}
   inDialogue: 0
+  inMinigame: 0
 --- !u!4 &1381795931
 Transform:
   m_ObjectHideFlags: 0
@@ -2729,7 +2773,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1418718057
 GameObject:
@@ -2878,8 +2922,8 @@ PrefabInstance:
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
       propertyPath: sentences.Array.data[0]
-      value: "Mr Parkins: Hey Dante. You were late to class again today, what\u2019s
-        going on?"
+      value: 'Mr Parkins: Hey, Dante. You were late to class again today, what''s
+        going on?'
       objectReference: {fileID: 0}
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
@@ -3020,7 +3064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8015f325dde9769499b8ff6fb8a2bedd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choice1: Lets not think about this right now.
+  choice1: Let's not think about this right now.
   response1: {fileID: 1890216944}
   choice2: (Approach Mr. Parkins)
   response2: {fileID: 1235904421}
@@ -3043,11 +3087,11 @@ MonoBehaviour:
   sentences:
   - (Player interacts with alarm clock)
   - (Open bubble to memory of approaching teacher at school)
-  - "I\u2019m always late to class and I can tell Mr. Parkins is upset at me for
-    it. But I really need help on my homework assignment. "
-  - "I don\u2019t think my history grade can take another zero for not turning in
-    my assignment. But I probably would have gotten a zero anyways because I didn\u2019t
-    know what to write about."
+  - 'I''m always late to class and I can tell Mr. Parkins is upset at me for it.
+    But I really need help on my homework assignment. '
+  - "I don't think my history grade can take another zero for not turning in my assignment.
+    But I probably would have gotten a zero anyways because I didn\u2019t know what
+    to write about."
   - How can I talk to Mr. Parkins on Monday without getting yelled at? I need help
     with my homework!
 --- !u!114 &1591147769
@@ -3181,8 +3225,8 @@ Transform:
   m_Children:
   - {fileID: 1890216945}
   - {fileID: 1235904422}
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 804458078}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1620091487 stripped
 Transform:
@@ -3284,7 +3328,7 @@ PrefabInstance:
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
       propertyPath: sentences.Array.data[0]
-      value: "Ugh, I\u2019m hopeless. What else should I do today?"
+      value: Ugh, I'm hopeless. What else should I do today?
       objectReference: {fileID: 0}
     - target: {fileID: 1947247961319760152, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
@@ -3418,9 +3462,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: fdbadd0af9312204a9e6fdbca991772c, type: 3}
     m_FontSize: 40
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 50
@@ -3515,8 +3559,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 28
+    m_Font: {fileID: 12800000, guid: fdbadd0af9312204a9e6fdbca991772c, type: 3}
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -3527,7 +3571,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: sample dialogue
+  m_Text: sample dialogue...
 --- !u!222 &1952896382
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3571,8 +3615,8 @@ Transform:
   - {fileID: 1620091487}
   - {fileID: 731990939}
   - {fileID: 509363706}
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 804458078}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2034970676
 MonoBehaviour:
@@ -3723,14 +3767,14 @@ PrefabInstance:
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
       propertyPath: sentences.Array.data[0]
-      value: "Mr Parkins: Ok, well, I can\u2019t have you showing up late anymore
-        or else I\u2019m going to have to give you detention."
+      value: 'Mr Parkins: Ok, well, I can''t have you showing up late anymore or
+        else I''m going to have to give you detention.'
       objectReference: {fileID: 0}
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
       propertyPath: sentences.Array.data[1]
-      value: "Dante: Oh no, I\u2019m going to get detention. Mr. Parkins is mad at
-        me, he won\u2019t help me with my homework. I\u2019ll just figure it out."
+      value: 'Dante: Oh no, I''m going to get detention. Mr. Parkins is mad at me,
+        he won''t help me with my homework. I''ll just figure it out.'
       objectReference: {fileID: 0}
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
@@ -3822,9 +3866,8 @@ PrefabInstance:
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}
       propertyPath: sentences.Array.data[1]
-      value: "Oh no I have to get to my next class. I\u2019ll just figure it out
-        and hopefully get a C. Tanya's way smarter than me, there\u2019s no way I
-        can get the same grade."
+      value: Oh no I have to get to my next class. I'll just figure it out and hopefully
+        get a C. Tanya's way smarter than me, there's no way I can get the same grade.
       objectReference: {fileID: 0}
     - target: {fileID: 447873331714532702, guid: f4046d0a37928dd44b2b65078c166108,
         type: 3}

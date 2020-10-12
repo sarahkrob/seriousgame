@@ -5,6 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Background
+  - '|See|Touch|Smell|Taste|'
+  - '|See|Touch|'
+  - '|See|Hear|'
+  - '|See|Touch|Hear|'
+  - '|See|Hear|Smell|'
+  - '|See|Touch|Hear|Smell|'
+  - '|See|Touch|Hear|Taste|'
+  - '|See|Touch|Taste|'
   layers:
   - Default
   - TransparentFX
