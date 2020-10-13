@@ -13,6 +13,10 @@ TagManager:
   - '|See|Touch|Hear|Smell|'
   - '|See|Touch|Hear|Taste|'
   - '|See|Touch|Taste|'
+  - Main Object
+  - Bed
+  - Clock
+  - Shelf
   layers:
   - Default
   - TransparentFX

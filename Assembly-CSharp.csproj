@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\Dialog.cs" />
     <Compile Include="Assets\Scripts\DialogManager.cs" />
     <Compile Include="Assets\Scripts\MinigamePickup.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Fonts\OFL.txt" />
