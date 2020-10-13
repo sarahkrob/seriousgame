@@ -145,8 +145,11 @@ public class DialogManager : MonoBehaviour
         }
         else
         {
-            Instantiate(Minigame);
-            StateManager.Instance.inMinigame = true;
+            if(currentDialog.miniGame)
+            {
+                Instantiate(Minigame);
+                StateManager.Instance.inMinigame = true;
+            }
             StateManager.Instance.Object.GetComponent<PointClick>().dialogueIncorrect();
             Interactables.SetActive(false);
         }
