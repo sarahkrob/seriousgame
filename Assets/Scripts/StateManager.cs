@@ -9,6 +9,7 @@ public class StateManager : MonoBehaviour
     public GameObject Interactables;
     public bool inDialogue; //detects if player is currently in dialogue
     public bool inMinigame;
+    public int finishedObjects;
 
     private void Awake()
     {

@@ -48,7 +48,6 @@ public class Minigame : MonoBehaviour
             case "Hear":
                 if (MinigameManager.Instance.roundCounter == 3)
                 {
-                    Debug.Log("SWAP TO SMELL");
                     hearText.color = finishedColor;
                     MinigameManager.Instance.currentRound = "Smell";
                     MinigameManager.Instance.roundCounter = 0;

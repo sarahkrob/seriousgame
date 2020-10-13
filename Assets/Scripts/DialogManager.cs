@@ -20,6 +20,7 @@ public class DialogManager : MonoBehaviour
     private bool button3enabled;
     public GameObject Minigame;
     public GameObject Interactables;
+    public GameObject endingObjects;
 
     // Start is called before the first frame update
     void Start()
@@ -136,6 +137,11 @@ public class DialogManager : MonoBehaviour
         if (currentDialog.rightPath)
         {
             StateManager.Instance.Object.GetComponent<PointClick>().dialogueCorrect();
+            StateManager.Instance.finishedObjects += 1;
+            if (StateManager.Instance.finishedObjects == 4)
+            {
+                endingObjects.SetActive(true);
+            }
         }
         else
         {
