@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class DialogTrigger : MonoBehaviour
@@ -11,6 +12,11 @@ public class DialogTrigger : MonoBehaviour
     public void TriggerDialog()
     {
         FindObjectOfType<DialogManager>().startD(d);
+    }
+
+    public void EndGame()
+    {
+        SceneManager.LoadScene("Ending");
     }
 
 }
